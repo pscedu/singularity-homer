@@ -1,5 +1,4 @@
 # README
-![Logo](http://homer.ucsd.edu/homer/pic2.gif)
 
 ## About
 Source code repository can be found [here](http://homer.ucsd.edu/homer/).
