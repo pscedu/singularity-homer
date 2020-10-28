@@ -1,0 +1,27 @@
+
+#%Module1.0
+#INSTALLATION instructions can be found here https://gitlab.psc.edu/icaoberg/singularity-homer
+
+## "URL: https://www.psc.edu/resources/software"
+## "Category: Bioinformatics"
+
+ proc ModulesHelp { } {
+ global dotversion
+ puts stderr "homer  4.11.0 (homer)"
+ puts stderr "---------------------"
+ puts stderr "\nTo enable, first load the following required modules (via modul
+e load command): "
+ puts stderr "\n\tmodule load homer/4.11.0"
+ puts stderr "\nFor a full list of binaries included in this module, type"
+ puts stderr "\n\tmodule what-is homer/4.11.0"
+ }
+
+module-whatis "homer 4.11.0 (homer)
+
+  Tools included in this module are
+
+  * homer"
+
+set HOMER_HOME /opt/packages/homer/4.11.0
+setenv HOMER_HOME ${HOMER_HOME}
+prepend-path PATH ${HOMER_HOME}
