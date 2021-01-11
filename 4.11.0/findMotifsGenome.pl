@@ -6,7 +6,7 @@ fi
 
 VERSION=4.11.0
 PACKAGE=homer
-TOOL=homer
+TOOL=findMotifsGenome.pl
 DIRECTORY=/opt/packages/$PACKAGE/$VERSION
 
 PERSISTENT_FILE_STORAGE=/ocean

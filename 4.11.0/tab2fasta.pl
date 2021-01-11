@@ -6,7 +6,7 @@ fi
 
 VERSION=4.11.0
 PACKAGE=homer
-TOOL=homer
+TOOL=tab2fasta.pl
 DIRECTORY=/opt/packages/$PACKAGE/$VERSION
 
 PERSISTENT_FILE_STORAGE=/ocean
