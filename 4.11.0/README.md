@@ -14,7 +14,7 @@ bash ./pull.sh
 Copy the
 
 * `SIF` file
-* and the `homer` script
+* and all the scripts
 
 to `/opt/packages/homer/4.11.0`.
 
