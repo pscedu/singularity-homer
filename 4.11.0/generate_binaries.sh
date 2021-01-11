@@ -74,14 +74,12 @@ fi
 singularity exec \$OPTIONS \$DIRECTORY/singularity-\$PACKAGE-\$VERSION.sif \$TOOL "\$@"
 EOF
 
-mkdir temp
 for TOOL in "${TOOLS[@]}"
 do
 	echo "* "$TOOL
         cp template $TOOL
 	sed -i "s/TOOL_NAME/$TOOL/g" $TOOL
 	chmod +x $TOOL
-        cp $TOOL temp/
 done
 
 rm -f template
