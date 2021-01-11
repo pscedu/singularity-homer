@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: quay.io/biocontainers/homer:4.11--pl526hc9558a2_3
+
+%labels
+    AUTHOR icaoberg
+    EMAIL icaoberg@psc.edu
+    WEBSITE https://gitlab.psc.edu/icaoberg/singularity-homer
+    VERSION 4.11.0
+
+%post
+   rm /etc/resolv.conf
+
+####################################################################################
