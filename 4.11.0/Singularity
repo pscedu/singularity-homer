@@ -2,12 +2,9 @@ Bootstrap: docker
 From: quay.io/biocontainers/homer:4.11--pl526hc9558a2_3
 
 %labels
-    AUTHOR icaoberg
+    MAINTAINER icaoberg
     EMAIL icaoberg@psc.edu
-    WEBSITE https://gitlab.psc.edu/icaoberg/singularity-homer
+    SUPPORT help@psc.edu
+    REPOSITORY http://gitub.com/pscedu/singularity-homer
+    COPYRIGHT Copyright © 2021 Pittsburgh Supercomputing Center. All Rights Reserved.    
     VERSION 4.11.0
-
-%post
-   rm /etc/resolv.conf
-
-####################################################################################
