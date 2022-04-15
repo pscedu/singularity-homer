@@ -53,14 +53,10 @@ changeNewLine.pl
 cat << EOF > template
 #!/bin/bash
 
-if [ ! \$(command -v singularity) ]; then
-	module load singularity
-fi
-
 VERSION=4.11.0
 PACKAGE=homer
 TOOL=TOOL_NAME
-DIRECTORY=/opt/packages/\$PACKAGE/\$VERSION
+DIRECTORY=\$(dirname \$0)
 
 PERSISTENT_FILE_STORAGE=/ocean
 if [ -d \$PERSISTENT_FILE_STORAGE ]; then
@@ -80,6 +76,7 @@ do
         cp template $TOOL
 	sed -i "s/TOOL_NAME/$TOOL/g" $TOOL
 	chmod +x $TOOL
+        git add $TOOL
 done
 
 rm -f template

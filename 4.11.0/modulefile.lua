@@ -11,6 +11,7 @@ whatis("Version: 4.11.0")
 whatis("Category: Biological Sciences")
 whatis("URL: https://www.psc.edu/resources/software")
 whatis("Description: HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.")
+whatis("Keywords: singularity bioinformatics")
 
 help([[
 HOMER (Hypergeometric Optimization of Motif EnRichment) is a suite of tools for Motif Discovery and next-gen sequencing analysis.

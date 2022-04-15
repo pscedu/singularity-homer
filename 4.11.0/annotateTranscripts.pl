@@ -1,13 +1,9 @@
 #!/bin/bash
 
-if [ ! $(command -v singularity) ]; then
-	module load singularity
-fi
-
 VERSION=4.11.0
 PACKAGE=homer
 TOOL=annotateTranscripts.pl
-DIRECTORY=/opt/packages/$PACKAGE/$VERSION
+DIRECTORY=$(dirname $0)
 
 PERSISTENT_FILE_STORAGE=/ocean
 if [ -d $PERSISTENT_FILE_STORAGE ]; then
