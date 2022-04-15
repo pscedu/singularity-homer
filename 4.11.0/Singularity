@@ -8,3 +8,6 @@ From: quay.io/biocontainers/homer:4.11--pl5321h9f5acd7_7
     REPOSITORY http://gitub.com/pscedu/singularity-homer
     COPYRIGHT Copyright © 2021-2022 Pittsburgh Supercomputing Center. All Rights Reserved.    
     VERSION 4.11.0
+
+%environment
+    export LC_ALL=C
